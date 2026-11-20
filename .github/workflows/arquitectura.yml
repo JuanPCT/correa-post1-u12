@@ -12,5 +12,7 @@ jobs:
           distribution: temurin
           java-version: '17'
           cache: maven
-      - name: Verificar reglas de arquitectura y suite completa
+      - name: Verificar reglas de arquitectura
+        run: mvn -B test -Dtest=ReglasArquitectura
+      - name: Verificar suite completa
         run: mvn -B verify
