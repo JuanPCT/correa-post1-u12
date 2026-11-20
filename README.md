@@ -31,3 +31,8 @@ Usa Java 17 y Maven. Ejecuta `mvn clean verify` para las seis pruebas unitarias,
 - `PUT /api/solicitudes/{id}/estado` recibe un estado, por ejemplo `"APROBADA"`. Empleado y Auditoría reciben cada transición y Contabilidad actúa en aprobaciones.
 
 Cada solicitud aplica el tope de su categoría. En duplicados, el período es mes y año y se comparan solicitudes pendientes del mismo empleado y categoría. Un control de acumulados requeriría el registro de desembolsos de Finanzas.
+
+## Evidencia de GitHub Actions
+
+- [La ejecución falla por la dependencia de JPA introducida a propósito en el validador de duplicados](https://github.com/JuanPCT/correa-post1-u12/actions/runs/44753312050).
+- [La ejecución posterior al revert pasa las cuatro reglas de ArchUnit y la suite Maven](https://github.com/JuanPCT/correa-post1-u12/actions/runs/44753317477).
