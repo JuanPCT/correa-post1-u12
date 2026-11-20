@@ -10,6 +10,9 @@ import org.springframework.stereotype.Component;
 @Component
 @Order(3)
 public class ValidadorDuplicados implements ValidadorSolicitud {
+    private static final Class<?> VIOLACION_DEMOSTRACION =
+            com.empresa.reembolsos.infraestructura.RepositorioSolicitudesJpa.class;
+
     @Override
     public Optional<String> validar(SolicitudReembolso s, List<SolicitudReembolso> pendientes) {
         boolean duplicada = pendientes.stream().anyMatch(p -> p.getCategoria() == s.getCategoria()
