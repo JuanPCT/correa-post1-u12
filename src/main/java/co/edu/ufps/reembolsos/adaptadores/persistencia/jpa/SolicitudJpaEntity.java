@@ -9,7 +9,7 @@ public class SolicitudJpaEntity {
     @Enumerated(EnumType.STRING) private CategoriaGasto categoria;
     @Column(precision=14,scale=2) private BigDecimal montoBase;
     private boolean documentosCompletos;
-    @Column(unique=true) private String claveDuplicado;
+    private String claveDuplicado;
     @Column(precision=14,scale=2) private BigDecimal montoCalculado;
     @Enumerated(EnumType.STRING) private EstadoSolicitud estado;
     private String motivoRechazo;
