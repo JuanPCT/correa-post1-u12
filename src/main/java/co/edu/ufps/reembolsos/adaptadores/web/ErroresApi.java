@@ -1,5 +1,5 @@
 package co.edu.ufps.reembolsos.adaptadores.web;
-import co.edu.ufps.reembolsos.procesamiento.SolicitudNoEncontrada;
+import co.edu.ufps.reembolsos.domain.SolicitudNoEncontrada;
 import java.util.Map;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

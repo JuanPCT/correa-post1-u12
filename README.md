@@ -20,6 +20,6 @@ La respuesta de radicación incluye estado, monto calculado o motivo de rechazo.
 
 ## Diseño y calidad
 
-Documentos y monto se verifican antes de consultar duplicidad. Las tres Strategies y los observers son beans descubiertos por listas Spring. El puerto del repositorio mantiene JPA en el adaptador y simplifica pruebas. ArchUnit protege la dirección de dependencias, los contratos Strategy/Observer y el límite web. El workflow Maven ejecuta las pruebas unitarias, integración H2 y arquitectura.
+Documentos y monto se verifican antes de consultar duplicidad. Las tres Strategies y los observers son beans descubiertos por listas Spring. El puerto del repositorio mantiene JPA en el adaptador y simplifica pruebas. ArchUnit protege la dirección de dependencias, los contratos Strategy/Observer y el límite web. La primera regla detectó que el adaptador web dependía directamente del procesador y de una excepción de su paquete; se añadió una fachada de aplicación y la excepción pasó al dominio. Los cuatro checks quedan verdes. El workflow Maven ejecuta pruebas unitarias, integración H2 y arquitectura.
 
 Las reglas de reintento y envío externo se excluyeron: necesitarían una política de idempotencia y outbox que no exige el alcance de esta práctica.
