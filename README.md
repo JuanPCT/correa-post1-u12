@@ -1,3 +1,5 @@
+Repositorio GitHub: https://github.com/JuanPCT/correa-post1-u12
+
 # Unidad 12 — Reembolsos integrados
 
 Aplicación Spring Boot 3 / Java 17 que integra Chain of Responsibility para validaciones, Strategy para fórmulas por categoría y Observer para cambios de estado. La propuesta arquitectónica se fechó antes del código en [`docs/adr/ADR-001.md`](docs/adr/ADR-001.md).
